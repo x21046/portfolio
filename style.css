@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after, *::before {
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+:root,html{
+    /* スムーススクロール用 */
+    scroll-behavior: smooth;
+  
+    font-family: 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 14pt;
+    font-feature-settings: "palt";
+
+    --main-color: #FFD610;
+    --sub-color: #ffce7e;
+    --text-color: #242424;
+    --bg-color: #242424;
+    
+    --section-margin: 150px;
+}
+
+#top-left{
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -2;
+}
+
+.bg-filter{
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: -1;
+}
+
+.bg-right{
+    top: 0%;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    background-color: var(--bg-color);
+    position: absolute;
+    z-index: -99;
+}
+
+.top{
+    display: flex; /* この要素の内部の表示をフレキシブルに変更可能とする */
+    justify-content: center; /* 内部要素を中央揃え */
+    align-items: center; /* 内部要素を中央揃え */
+    min-height: 100vh; /* 最低高さを画面の高さに揃える(最低限、画面の高さ分は領域が確保される) */
+}
+
+.top-title{
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: 8%;
+    left: 61%;
+    z-index: 2; /* 画像と背景の間に重ねる */
+}
+
+.illust-icon {
+    position: relative; /* 縁取り要素を追加する前に、親コンテナの配置方法を相対配置に変更 */
+}
+
+.illust-icon img {
+    display: block; /* 画像自体を箱として表示させる */
+    width: 180px; /* 横幅の設定 */
+    height: 180px; /* 高さの設定 */
+    border-radius: 50%; /* 角丸を縦横のサイズの半分以上の値を指定することで正方形の画像は円にくり抜かれる、99999pxなどでもOK */
+}
+
+.illust-circle1,
+.illust-circle2,
+.illust-circle3 {
+    position: absolute; /* 縁取り要素は絶対配置 */
+    top: 0; /* .profile-photoの開始位置と揃える */
+    width: 100%;
+    height: 100%;
+    border-radius: 40%; /* 40%の角丸めで歪な形を作成しておく */
+    z-index: -1; /* 画像と背景の間に重ねる */
+}
+
+
+
+@keyframes rotation {
+    from {  /* 開始時点の装飾 */
+      transform: rotate(0deg);  /* 変形操作の内、回転0度 */
+    }
+  
+    to {  /* 終了時点の装飾 */
+      transform: rotate(360deg); /* 変形操作の内、回転360度 */
+    }
+}
+
+.illust-circle1 {
+    opacity: 0.2; /* 透明度 */
+    background: rgb(255, 255, 255); /* 縁取りの色設定 */
+    transform-origin: 50% 47%;  /* transformの基準位置を変更 */
+    animation: rotation 5s infinite linear; /* rotationアニメーションの秒数と繰り返し、変化を線形に変更 */
+}
+
+.illust-circle2 {
+    opacity: 0.4;
+    background: rgb(255, 255, 255);
+    transform-origin: 52% 48%;
+    animation: rotation 12s infinite linear;
+}
+
+.illust-circle3 {
+    opacity: 0.3;
+    background: rgb(255, 255, 255);
+    transform-origin: 48% 52%;
+    animation: rotation 8s infinite linear;
+}
+
+.illust-icon{
+    top: 63%;
+    left: 54%;
+    position: absolute;
+    z-index: -1;
+}
+
+.illust-title{
+    color: white;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 88%;
+    left: 57.5%;
+    z-index: 2; /* 画像と背景の間に重ねる */
+}
+
+.game-icon {
+    position: relative; /* 縁取り要素を追加する前に、親コンテナの配置方法を相対配置に変更 */
+}
+
+.game-icon img {
+    display: block; /* 画像自体を箱として表示させる */
+    width: 180px; /* 横幅の設定 */
+    height: 180px; /* 高さの設定 */
+    border-radius: 50%; /* 角丸を縦横のサイズの半分以上の値を指定することで正方形の画像は円にくり抜かれる、99999pxなどでもOK */
+}
+
+.game-circle1,
+.game-circle2,
+.game-circle3 {
+    position: absolute; /* 縁取り要素は絶対配置 */
+    top: 0; /* .profile-photoの開始位置と揃える */
+    width: 100%;
+    height: 100%;
+    border-radius: 40%; /* 40%の角丸めで歪な形を作成しておく */
+    z-index: -1; /* 画像と背景の間に重ねる */
+}
+
+.game-circle1 {
+    opacity: 0.2; /* 透明度 */
+    background: rgb(255, 255, 255); /* 縁取りの色設定 */
+    transform-origin: 50% 47%;  /* transformの基準位置を変更 */
+    animation: rotation 5s infinite linear; /* rotationアニメーションの秒数と繰り返し、変化を線形に変更 */
+}
+
+.game-circle2 {
+    opacity: 0.4;
+    background: rgb(255, 255, 255);
+    transform-origin: 52% 48%;
+    animation: rotation 12s infinite linear;
+}
+
+.game-circle3 {
+    opacity: 0.3;
+    background: rgb(255, 255, 255);
+    transform-origin: 48% 52%;
+    animation: rotation 8s infinite linear;
+}
+
+.game-icon{
+    top: 25%;
+    left: 84%;
+    position: absolute;
+    z-index: -1;
+}
+
+.game-title{
+    color: white;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 87.5%;
+    z-index: 2; /* 画像と背景の間に重ねる */
+}
+
+.opencv-icon {
+    position: relative; /* 縁取り要素を追加する前に、親コンテナの配置方法を相対配置に変更 */
+}
+
+.opencv-icon img {
+    display: block; /* 画像自体を箱として表示させる */
+    width: 180px; /* 横幅の設定 */
+    height: 180px; /* 高さの設定 */
+    border-radius: 50%; /* 角丸を縦横のサイズの半分以上の値を指定することで正方形の画像は円にくり抜かれる、99999pxなどでもOK */
+}
+
+.opencv-circle1,
+.opencv-circle2,
+.opencv-circle3 {
+    position: absolute; /* 縁取り要素は絶対配置 */
+    top: 0; /* .profile-photoの開始位置と揃える */
+    width: 100%;
+    height: 100%;
+    border-radius: 40%; /* 40%の角丸めで歪な形を作成しておく */
+    z-index: -1; /* 画像と背景の間に重ねる */
+}
+
+.opencv-circle1 {
+    opacity: 0.2; /* 透明度 */
+    background: rgb(255, 255, 255); /* 縁取りの色設定 */
+    transform-origin: 50% 47%;  /* transformの基準位置を変更 */
+    animation: rotation 5s infinite linear; /* rotationアニメーションの秒数と繰り返し、変化を線形に変更 */
+}
+
+.opencv-circle2 {
+    opacity: 0.4;
+    background: rgb(246, 246, 246);
+    transform-origin: 52% 48%;
+    animation: rotation 12s infinite linear;
+}
+
+.opencv-circle3 {
+    opacity: 0.3;
+    background: rgb(255, 247, 231);
+    transform-origin: 48% 52%;
+    animation: rotation 8s infinite linear;
+}
+
+.opencv-icon{
+    top: 25%;
+    left: 69%;
+    position: absolute;
+    z-index: -1;
+}
+
+.opencv-title{
+    color: white;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 71.5%;
+    z-index: 2; /* 画像と背景の間に重ねる */
+}
+
+.anime-icon {
+    position: relative; /* 縁取り要素を追加する前に、親コンテナの配置方法を相対配置に変更 */
+}
+
+.anime-icon img {
+    display: block; /* 画像自体を箱として表示させる */
+    width: 180px; /* 横幅の設定 */
+    height: 180px; /* 高さの設定 */
+    border-radius: 50%; /* 角丸を縦横のサイズの半分以上の値を指定することで正方形の画像は円にくり抜かれる、99999pxなどでもOK */
+}
+
+.anime-circle1,
+.anime-circle2,
+.anime-circle3 {
+    position: absolute; /* 縁取り要素は絶対配置 */
+    top: 0; /* .profile-photoの開始位置と揃える */
+    width: 100%;
+    height: 100%;
+    border-radius: 40%; /* 40%の角丸めで歪な形を作成しておく */
+    z-index: -1; /* 画像と背景の間に重ねる */
+}
+
+.anime-circle1 {
+    opacity: 0.2; /* 透明度 */
+    background: rgb(255, 255, 255); /* 縁取りの色設定 */
+    transform-origin: 50% 47%;  /* transformの基準位置を変更 */
+    animation: rotation 5s infinite linear; /* rotationアニメーションの秒数と繰り返し、変化を線形に変更 */
+}
+
+.anime-circle2 {
+    opacity: 0.4;
+    background: rgb(255, 255, 255);
+    transform-origin: 52% 48%;
+    animation: rotation 12s infinite linear;
+}
+
+.anime-circle3 {
+    opacity: 0.3;
+    background: rgb(255, 255, 255);
+    transform-origin: 48% 52%;
+    animation: rotation 8s infinite linear;
+}
+
+.anime-icon{
+    top: 63%;
+    left: 69%;
+    position: absolute;
+    z-index: -1;
+}
+
+.anime-title{
+    color: white;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 88%;
+    left: 70.1%;
+    z-index: 2; /* 画像と背景の間に重ねる */
+}
+
+.cg-icon {
+    position: relative; /* 縁取り要素を追加する前に、親コンテナの配置方法を相対配置に変更 */
+}
+
+.cg-icon img {
+    display: block; /* 画像自体を箱として表示させる */
+    width: 180px; /* 横幅の設定 */
+    height: 180px; /* 高さの設定 */
+    border-radius: 50%; /* 角丸を縦横のサイズの半分以上の値を指定することで正方形の画像は円にくり抜かれる、99999pxなどでもOK */
+}
+
+.cg-circle1,
+.cg-circle2,
+.cg-circle3 {
+    position: absolute; /* 縁取り要素は絶対配置 */
+    top: 0; /* .profile-photoの開始位置と揃える */
+    width: 100%;
+    height: 100%;
+    border-radius: 40%; /* 40%の角丸めで歪な形を作成しておく */
+    z-index: -1; /* 画像と背景の間に重ねる */
+}
+
+.cg-circle1 {
+    opacity: 0.2; /* 透明度 */
+    background: rgb(255, 255, 255); /* 縁取りの色設定 */
+    transform-origin: 50% 47%;  /* transformの基準位置を変更 */
+    animation: rotation 5s infinite linear; /* rotationアニメーションの秒数と繰り返し、変化を線形に変更 */
+}
+
+.cg-circle2 {
+    opacity: 0.4;
+    background: rgb(255, 255, 255);
+    transform-origin: 52% 48%;
+    animation: rotation 12s infinite linear;
+}
+
+.cg-circle3 {
+    opacity: 0.3;
+    background: rgb(255, 255, 255);
+    transform-origin: 48% 52%;
+    animation: rotation 8s infinite linear;
+}
+
+.cg-icon{
+    top: 63%;
+    left: 84%;
+    position: absolute;
+    z-index: -1;
+}
+
+.cg-title{
+    color: white;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 88%;
+    left: 89%;
+    z-index: 2; /* 画像と背景の間に重ねる */
+}
+
+.profile-icon {
+    position: relative; /* 縁取り要素を追加する前に、親コンテナの配置方法を相対配置に変更 */
+}
+
+.profile-icon img {
+    display: block; /* 画像自体を箱として表示させる */
+    width: 180px; /* 横幅の設定 */
+    height: 180px; /* 高さの設定 */
+    border-radius: 50%; /* 角丸を縦横のサイズの半分以上の値を指定することで正方形の画像は円にくり抜かれる、99999pxなどでもOK */
+}
+
+.profile-circle1,
+.profile-circle2,
+.profile-circle3 {
+    position: absolute; /* 縁取り要素は絶対配置 */
+    top: 0; /* .profile-photoの開始位置と揃える */
+    width: 100%;
+    height: 100%;
+    border-radius: 40%; /* 40%の角丸めで歪な形を作成しておく */
+    z-index: -1; /* 画像と背景の間に重ねる */
+}
+
+.profile-circle1 {
+    opacity: 0.2; /* 透明度 */
+    background: rgb(255, 255, 255); /* 縁取りの色設定 */
+    transform-origin: 50% 47%;  /* transformの基準位置を変更 */
+    animation: rotation 5s infinite linear; /* rotationアニメーションの秒数と繰り返し、変化を線形に変更 */
+}
+
+.profile-circle2 {
+    opacity: 0.4;
+    background: rgb(255, 255, 255);
+    transform-origin: 52% 48%;
+    animation: rotation 12s infinite linear;
+}
+
+.profile-circle3 {
+    opacity: 0.3;
+    background: rgb(255, 255, 255);
+    transform-origin: 48% 52%;
+    animation: rotation 8s infinite linear;
+}
+
+.profile-icon{
+    top: 25%;
+    left: 54%;
+    position: absolute;
+    z-index: -1;
+}
+
+.profile-title{
+    color: white;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    z-index: 2; /* 画像と背景の間に重ねる */
+}
+
+.link:hover{
+    color: var(--sub-color);
+}

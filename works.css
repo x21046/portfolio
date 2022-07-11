@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after, *::before {
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+:root,html{
+    /* スムーススクロール用 */
+    scroll-behavior: smooth;
+  
+    font-family: 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 14pt;
+    font-feature-settings: "palt";
+
+    --main-color: #FFD610;
+    --sub-color: #D7F4FC;
+    --text-color: #242424;
+    --bg-color: #242424;
+    
+    --section-margin: 150px;
+}
+
+header{
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 85px; /* 高さを50pxに指定 */
+    background: var(--bg-color); /* 背景色にグレーを指定 */
+    padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+}
+
+.title h2{
+    position: absolute;
+    bottom: 8px;
+    left: 20%;
+    color: #fff;
+    font-size: 2.5em;
+    letter-spacing: 5px;
+}
+
+.toTop h2{
+    position: absolute;
+    bottom: 23px;
+    right: 10%;
+    color: #fff;
+    font-size: 1.7em;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: rgb(180, 180, 180) solid 1.5px;
+}
+
+.title-icon{
+    position: absolute;
+    bottom: 12px;
+    left: 13%;
+    display: block; /* 画像自体を箱として表示させる */
+    width: 60px; /* 横幅の設定 */
+    height: 60px; /* 高さの設定 */
+    border-radius: 50%;
+}
+
+
+
+main {
+    height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+}
