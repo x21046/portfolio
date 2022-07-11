@@ -24,7 +24,7 @@ html {
     font-feature-settings: "palt";
 
     --main-color: #FFD610;
-    --sub-color: #D7F4FC;
+    --sub-color: #ffce7e;
     --text-color: #242424;
     --bg-color: #242424;
     
@@ -78,12 +78,141 @@ footer{
     width: 100%; /* 幅いっぱいを指定 */
     height: 400px; /* 高さを50pxに指定 */
     background: var(--bg-color);
+    position: relative;
 }
 
 .footer-title{
     color: #fff;
+    position: absolute;
+    top: 25px;
+    left: 38%;
+    font-size: 2.5em;
 }
 
-main {
+main{
     height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+}
+
+.icon01{
+    display: block; /* 画像自体を箱として表示させる */
+    width: 150px; /* 横幅の設定 */
+    height: 150px; /* 高さの設定 */
+    border-radius: 50%;
+    top: 130px;
+    left: 15%;
+    position: absolute;
+    z-index: 1;
+}
+
+.icon02{
+    display: block; /* 画像自体を箱として表示させる */
+    width: 150px; /* 横幅の設定 */
+    height: 150px; /* 高さの設定 */
+    border-radius: 50%;
+    top: 130px;
+    left: 30%;
+    position: absolute;
+    z-index: 1;
+}
+
+.icon03{
+    display: block; /* 画像自体を箱として表示させる */
+    width: 150px; /* 横幅の設定 */
+    height: 150px; /* 高さの設定 */
+    border-radius: 50%;
+    top: 130px;
+    left: 45%;
+    position: absolute;
+    z-index: 1;
+}
+
+.icon04{
+    display: block; /* 画像自体を箱として表示させる */
+    width: 150px; /* 横幅の設定 */
+    height: 150px; /* 高さの設定 */
+    border-radius: 50%;
+    top: 130px;
+    left: 60%;
+    position: absolute;
+    z-index: 1;
+}
+
+.icon05{
+    display: block; /* 画像自体を箱として表示させる */
+    width: 150px; /* 横幅の設定 */
+    height: 150px; /* 高さの設定 */
+    border-radius: 50%;
+    top: 130px;
+    left: 75%;
+    position: absolute;
+    z-index: 1;
+}
+
+#title01{
+    color: #fff;
+    top: 300px;
+    left: 16.5%;
+    position: absolute;
+    z-index: 2;
+    text-decoration: none;
+}
+
+#title02{
+    color: #fff;
+    top: 300px;
+    left: 32.5%;
+    position: absolute;
+    z-index: 2;
+    text-decoration: none;
+}
+
+#title03{
+    color: #fff;
+    top: 300px;
+    left: 48%;
+    position: absolute;
+    z-index: 2;
+    text-decoration: none;
+}
+
+#title04{
+    color: #fff;
+    top: 300px;
+    left: 60.5%;
+    position: absolute;
+    z-index: 2;
+    text-decoration: none;
+}
+
+#title05{
+    color: #fff;
+    top: 300px;
+    left: 79%;
+    position: absolute;
+    z-index: 2;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: var(--sub-color);
+}
+
+#title01:hover{
+    color: var(--sub-color);
+}
+
+#title02:hover{
+    color: var(--sub-color);
+}
+
+#title03:hover{
+    color: var(--sub-color);
+}
+
+#title04:hover{
+    color: var(--sub-color);
+}
+
+#title05:hover{
+    color: var(--sub-color);
 }
