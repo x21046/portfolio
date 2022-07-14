@@ -90,7 +90,7 @@ footer{
 }
 
 main {
-    height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+    height: 2700pt; /* スクロールの演出を見れるようにmainに高さを指定 */
 }
 
 .icon01{
@@ -239,4 +239,139 @@ main {
 
 #title05:hover{
     color: var(--sub-color);
+}
+
+.top{
+    position: relative;
+}
+
+.top-img{
+    width: 100%;
+    height: 821px;
+    z-index: -2;
+    position: absolute;
+}
+
+.top-title{
+    color: #fff;
+    font-size: 3em;
+    top: 45vh;
+    left: 20%;
+    z-index: -1;
+    position: absolute;
+}
+
+.works-top{
+    color: var(--text-color);
+    font-size: 2.5em;
+    padding: 0 20px;
+    top: 1250px;
+    left: 43%;
+    border-bottom: 4px solid #fff;
+    z-index: -1;
+    position: absolute;
+}
+
+.work01{
+    position: relative;
+}
+
+.main-background{
+    top: 821px;
+    height: 2084.5pt;
+    width: 100%;
+    z-index: -99;
+    position: absolute;
+}
+
+.work-img01{
+    height: 300px;
+    width: 30%;
+    top: 1450px;
+    left: 20%;
+    z-index: -2;
+    position: absolute;
+}
+
+.work-title01{
+    color: var(--text-color);
+    font-size: 2em;
+    top: 1450px;
+    left: 60%;
+    z-index: -1;
+    position: absolute;
+}
+
+.work-txt01{
+    color: var(--text-color);
+    font-size: 1.5em;
+    top: 1520px;
+    left: 55%;
+    line-height: 70px;
+    z-index: -1;
+    position: absolute;
+}
+
+.work02{
+    position: relative;
+}
+
+.work-img02{
+    height: 600px;
+    width: 30%;
+    top: 1975px;
+    right: 20%;
+    z-index: -2;
+    position: absolute;
+}
+
+.work-txt02{
+    color: var(--text-color);
+    font-size: 1.5em;
+    top: 2045px;
+    right: 58%;
+    line-height: 70px;
+    z-index: -1;
+    position: absolute;
+}
+
+.work-title02{
+    color: var(--text-color);
+    font-size: 2em;
+    top: 1975px;
+    right: 65%;
+    z-index: -1;
+    position: absolute;
+}
+
+.work03{
+    position: relative;
+}
+
+.work-img03{
+    height: 300px;
+    width: 30%;
+    top: 2800px;
+    left: 20%;
+    z-index: -2;
+    position: absolute;
+}
+
+.work-title03{
+    color: var(--text-color);
+    font-size: 2em;
+    top: 2800px;
+    left: 60%;
+    z-index: -1;
+    position: absolute;
+}
+
+.work-txt03{
+    color: var(--text-color);
+    font-size: 1.5em;
+    top: 2870px;
+    left: 55%;
+    line-height: 70px;
+    z-index: -1;
+    position: absolute;
 }
