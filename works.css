@@ -299,8 +299,10 @@ main {
     font-size: 2em;
     top: 1450px;
     left: 60%;
+    padding: 0 20px;
     z-index: -1;
     position: absolute;
+    border-bottom: 4px solid #fff;
 }
 
 .work-txt01{
@@ -341,8 +343,10 @@ main {
     font-size: 2em;
     top: 1975px;
     right: 65%;
+    padding: 0 20px;
     z-index: -1;
     position: absolute;
+    border-bottom: 4px solid #fff;
 }
 
 .work03{
@@ -363,8 +367,10 @@ main {
     font-size: 2em;
     top: 2800px;
     left: 60%;
+    padding: 0 20px;
     z-index: -1;
     position: absolute;
+    border-bottom: 4px solid #fff;
 }
 
 .work-txt03{
