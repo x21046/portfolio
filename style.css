@@ -47,7 +47,7 @@ html {
     left: 0%;
     width: 50%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     position: absolute;
     z-index: -1;
 }
@@ -73,7 +73,7 @@ html {
     color: white;
     font-size: 3rem;
     position: absolute;
-    top: 8%;
+    top: 6%;
     left: 61%;
     z-index: 2; /* 画像と背景の間に重ねる */
 }
@@ -149,6 +149,16 @@ html {
     z-index: 2; /* 画像と背景の間に重ねる */
 }
 
+.game-king{
+    position: absolute;
+    top: 20%;
+    left: 87.7%;
+    width: 5%;
+    height: 5%;
+    border-radius: 40%;
+    z-index: -1;
+}
+
 .game-icon {
     position: relative; /* 縁取り要素を追加する前に、親コンテナの配置方法を相対配置に変更 */
 }
@@ -206,6 +216,16 @@ html {
     top: 50%;
     left: 87.5%;
     z-index: 2; /* 画像と背景の間に重ねる */
+}
+
+.opencv-king{
+    position: absolute;
+    top: 20%;
+    left: 72.7%;
+    width: 5%;
+    height: 5%;
+    border-radius: 40%;
+    z-index: -1;
 }
 
 .opencv-icon {

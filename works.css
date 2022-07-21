@@ -33,7 +33,7 @@ html {
 
 header{
     width: 100%; /* 幅いっぱいを指定 */
-    height: 85px; /* 高さを50pxに指定 */
+    height: 100px; /* 高さを50pxに指定 */
     background: var(--bg-color); /* 背景色にグレーを指定 */
     padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
     box-sizing: border-box; /* padding分を含んで幅を100%にするため */
@@ -41,11 +41,22 @@ header{
     top: 0; /* 上下の固定位置を上から0pxにする */
     left: 0; /* 左右の固定位置を左から0pxにする */
     display: flex; /* 中の要素を横並びにする */
+    z-index: 100;
+}
+
+.bg-filter{
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    height: 820.5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .title h2{
     position: absolute;
-    bottom: 8px;
+    bottom: 12px;
     left: 20%;
     color: #fff;
     font-size: 2.5em;
@@ -54,7 +65,7 @@ header{
 
 .toTop h2{
     position: absolute;
-    bottom: 23px;
+    bottom: 25px;
     right: 10%;
     color: #fff;
     font-size: 1.7em;
@@ -66,7 +77,7 @@ header{
 
 .title-icon{
     position: absolute;
-    bottom: 12px;
+    bottom: 16px;
     left: 13%;
     display: block; /* 画像自体を箱として表示させる */
     width: 60px; /* 横幅の設定 */
@@ -256,14 +267,14 @@ main {
 .top-title{
     color: #fff;
     font-size: 3em;
-    top: 45vh;
+    top: 400px;
     left: 20%;
-    z-index: -1;
+    z-index: 0;
     position: absolute;
 }
 
 .works-top{
-    color: var(--text-color);
+    color: #fff;
     font-size: 2.5em;
     padding: 0 20px;
     top: 1250px;
@@ -295,7 +306,7 @@ main {
 }
 
 .work-title01{
-    color: var(--text-color);
+    color: #fff;
     font-size: 2em;
     top: 1450px;
     left: 60%;
@@ -339,10 +350,10 @@ main {
 }
 
 .work-title02{
-    color: var(--text-color);
+    color: #fff;
     font-size: 2em;
     top: 1975px;
-    right: 65%;
+    left: 20%;
     padding: 0 20px;
     z-index: -1;
     position: absolute;
@@ -363,7 +374,7 @@ main {
 }
 
 .work-title03{
-    color: var(--text-color);
+    color: #fff;
     font-size: 2em;
     top: 2800px;
     left: 60%;
@@ -381,4 +392,8 @@ main {
     line-height: 70px;
     z-index: -1;
     position: absolute;
+}
+
+.black{
+    color: #242424;
 }

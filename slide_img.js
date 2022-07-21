@@ -315,4 +315,4 @@ document.getElementById('top-left').style.backgroundImage = image01src;
 
 const div = document.getElementById('top-left');
 
-let timerId = setInterval(nextImage, 5000);
+let timerId = setInterval(nextImage, 4000);
