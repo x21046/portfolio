@@ -27,7 +27,17 @@
         <div class="works">
             <h2 class="works-top">作品一覧</h2>
             <div class="work01">
-                <img src="img/opencv_02.png" class="work-img01">
+                <input type="checkbox" id="pop-up">
+                <label id="popup" for="pop-up" class="overlay">
+                    <label class="popWindow">
+                        <div class="ptitle">OpenCVによる硬貨判別</div><label class="close" for="pop-up">x</label><img itemprop="image" src="img/opencv_02.png" rel="noopener" alt="OpenCVによる硬貨判別" width="720" height="400"></div>
+                    </label>
+                </label>
+                <div class="c">
+                    <label for="pop-up">
+                        <img itemprop="image" src="img/opencv_02.png" class="work-img01">
+                    </label>
+                </div>
                 <h2 class="work-title01">硬貨判別</h2>
                 <p class="work-txt01">Houghサークルを用いて<br>硬貨ごとの半径の違いから<br>硬貨を識別して合計を出す</p>
             </div>
