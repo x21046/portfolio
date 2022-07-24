@@ -246,7 +246,7 @@ main {
     width: 30%;
     top: 714px;
     left: 20%;
-    z-index: -2;
+    z-index: 0;
     position: absolute;
 }
 
