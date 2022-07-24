@@ -19,7 +19,7 @@ html {
     /* スムーススクロール用 */
     scroll-behavior: smooth;
   
-    font-family: 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-family: 'Edu TAS Beginner', 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
     font-size: 14pt;
     font-feature-settings: "palt";
 
@@ -46,7 +46,7 @@ header{
 
 .title h2{
     position: absolute;
-    bottom: 12px;
+    bottom: 15px;
     left: 20%;
     color: #fff;
     font-size: 2.5em;
@@ -85,9 +85,9 @@ footer{
 .footer-title{
     color: #fff;
     position: absolute;
-    top: 25px;
-    left: 38%;
-    font-size: 2.5em;
+    top: 28px;
+    left: 38.5%;
+    font-size: 2.8em;
 }
 
 main {
@@ -152,7 +152,7 @@ main {
 #title01{
     color: #fff;
     top: 300px;
-    left: 16.5%;
+    left: 17.5%;
     position: absolute;
     z-index: 2;
     text-decoration: none;
@@ -161,7 +161,7 @@ main {
 #title02{
     color: #fff;
     top: 300px;
-    left: 32.5%;
+    left: 33%;
     position: absolute;
     z-index: 2;
     text-decoration: none;
@@ -170,7 +170,7 @@ main {
 #title03{
     color: #fff;
     top: 300px;
-    left: 48%;
+    left: 48.5%;
     position: absolute;
     z-index: 2;
     text-decoration: none;
@@ -179,7 +179,7 @@ main {
 #title04{
     color: #fff;
     top: 300px;
-    left: 60.5%;
+    left: 61.8%;
     position: absolute;
     z-index: 2;
     text-decoration: none;
@@ -188,7 +188,7 @@ main {
 #title05{
     color: #fff;
     top: 300px;
-    left: 79%;
+    left: 79.5%;
     position: absolute;
     z-index: 2;
     text-decoration: none;

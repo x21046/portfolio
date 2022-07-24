@@ -19,7 +19,7 @@ html {
     /* スムーススクロール用 */
     scroll-behavior: smooth;
   
-    font-family: 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-family: 'Edu TAS Beginner', 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
     font-size: 14pt;
     font-feature-settings: "palt";
 
@@ -56,7 +56,7 @@ header{
 
 .title h2{
     position: absolute;
-    bottom: 12px;
+    bottom: 17px;
     left: 20%;
     color: #fff;
     font-size: 2.5em;
@@ -95,9 +95,9 @@ footer{
 .footer-title{
     color: #fff;
     position: absolute;
-    top: 25px;
-    left: 38%;
-    font-size: 2.5em;
+    top: 28px;
+    left: 39%;
+    font-size: 2.8em;
 }
 
 main {
@@ -205,27 +205,27 @@ main {
 }
 
 .p-title{
-    margin-left: 2%;
+    margin-left: 2.8%;
 }
 
 .o-title{
-    margin-left: 1.5%;
+    margin-left: 2.3%;
 }
 
 .g-title{
-    margin-left: 2.5%;
+    margin-left: 3.2%;
 }
 
 .i-title{
-    margin-left: 3%;
+    margin-left: 3.3%;
 }
 
 .a-title{
-    margin-left: 0.5%;
+    margin-left: 1.8%;
 }
 
 .c-title{
-    margin-left: 4%;
+    margin-left: 4.5%;
 }
 
 .link:hover{
