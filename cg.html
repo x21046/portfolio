@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="works.css">
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 </head>
 <body>
     
@@ -28,17 +29,17 @@
         <div class="works">
             <h2 class="works-top">作品一覧</h2>
             <div class="work01">
-                <img src="img/cg_04.jpg" class="work-img01">
+                <img data-src="img/cg_04.jpg" class="work-img01 lazyload" alt="">
                 <h2 class="work-title01">深海の魚たち</h2>
                 <p class="work-txt01">大学2年のときMayaで作成<br>様々な種類の魚をモデリング</p>
             </div>
             <div class="work02">
-                <img src="img/cg_01.png" class="work-img02">
+                <img data-src="img/cg_01.png" class="work-img02 lazyload" alt="">
                 <h2 class="work-title02">クマの人形</h2>
                 <p class="work-txt02">大学1年のときMayaで作成<br>家のクマの人形がモチーフ</p>
             </div>
             <div class="work03">
-                <img src="img/cg_02.jpg" class="work-img03">
+                <img data-src="img/cg_02.jpg" class="work-img03 lazyload" alt="">
                 <h2 class="work-title03">りんご</h2>
                 <p class="work-txt03">blenderを使って作ったもの<br>5種類のマテリアルで作成</p>
             </div>
@@ -47,17 +48,20 @@
 
     <footer>
         <h2 class="footer-title">Click on the text</h2>
-        <img src="img/profile_02.png" class="icon01">
+        <img data-src="img/profile_02.png" class="icon01 lazyload" alt="">
         <a href="profile.html"><h2 class="p-title" id="title01">Profile</h2></a>
-        <img src="img/opencv_04.png" class="icon02">
+        <img data-src="img/opencv_04.png" class="icon02 lazyload" alt="">
         <a href="opencv.html"><h2 class="o-title" id="title02">OpenCV</h2></a>
-        <img src="img/game_02.png" class="icon03">
+        <img data-src="img/game_02.png" class="icon03 lazyload" alt="">
         <a href="game.html"><h2 class="g-title" id="title03">Game</h2></a>
-        <img src="img/illust_01.png" class="icon04">
+        <img data-src="img/illust_01.png" class="icon04 lazyload" alt="">
         <a href="illust.html"><h2 class="i-title" id="title04">Illust</h2></a>
-        <img src="img/anim_03.jpg" class="icon05">
+        <img data-src="img/anim_03.jpg" class="icon05 lazyload" alt="">
         <a href="animation.html"><h2 class="a-title" id="title05">Animation</h2></a>
     </footer>
+    <script>
+        lazyload();
+    </script>
 </body>
 </html>
 

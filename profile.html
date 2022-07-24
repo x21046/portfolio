@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="profile.css">
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 </head>
 <body>
     
@@ -22,36 +23,36 @@
         <div class="works">
             <h2 class="profile-top">自己紹介</h2>
             <div class="profile01">
-                <img src="img/profile_01.jpg" class="profile-img01">
+                <img data-src="img/profile_01.jpg" class="profile-img01 lazyload" alt="">
                 <p class="profile-txt01">名 前 ： Saito<br>誕生日 ： 2002年生まれ<br>趣 味 : 画像処理をすること<br>好 物 : チーズナン</p>
             </div>
             <h2 class="works-top">こんなことができます</h2>
             <div class="work01">
-                <img src="img/opencv_02.png" class="work-img01">
+                <img data-src="img/opencv_02.png" class="work-img01 lazyload" alt="">
                 <h2 class="work-title01">画像処理</h2>
                 <p class="work-txt01">C++, Python の OpenCVを<br>主に使用しておこなっている</p>
                 <a href="opencv.html" class="button01"><h2 class="button-txt01 link">詳しく見る></h2></a>
             </div>
             <div class="work02">
-                <img src="img/game_01.png" class="work-img02">
+                <img data-src="img/game_01.png" class="work-img02 lazyload" alt="">
                 <h2 class="work-title02">ゲーム制作</h2>
                 <p class="work-txt02">Unity, Openframeworksを<br>主に使用しておこなっている</p>
                 <a href="game.html" class="button02"><h2 class="button-txt02 link">詳しく見る></h2></a>
             </div>
             <div class="work03">
-                <img src="img/illust_05.png" class="work-img03">
+                <img data-src="img/illust_05.png" class="work-img03 lazyload" alt="">
                 <h2 class="work-title03">イラスト</h2>
                 <p class="work-txt03">Illustratorを主に使用して<br>身の回りのものを再現している</p>
                 <a href="illust.html" class="button03"><h2 class="button-txt03 link">詳しく見る></h2></a>
             </div>
             <div class="work04">
-                <img src="img/anim_02.png" class="work-img04">
+                <img data-src="img/anim_02.png" class="work-img04 lazyload" alt="">
                 <h2 class="work-title04">アニメーション</h2>
                 <p class="work-txt04">Illustratorで描いたものを<br>Animatorで動かしている</p>
                 <a href="animation.html" class="button04"><h2 class="button-txt04 link">詳しく見る></h2></a>
             </div>
             <div class="work05">
-                <img src="img/cg_04.jpg" class="work-img05">
+                <img data-src="img/cg_04.jpg" class="work-img05 lazyload" alt="">
                 <h2 class="work-title05">CG制作</h2>
                 <p class="work-txt05">MayaとBlenderを主に使用<br>して，現実に寄せて作る</p>
                 <a href="cg.html" class="button05"><h2 class="button-txt05 link">詳しく見る></h2></a>
@@ -61,16 +62,19 @@
 
     <footer>
         <h2 class="footer-title">Click on the text</h2>
-        <img src="img/opencv_04.png" class="icon01">
+        <img data-src="img/opencv_04.png" class="icon01 lazyload" alt="">
         <a href="opencv.html"><h2 class="link" id="title01">OpenCV</h2></a>
-        <img src="img/game_02.png" class="icon02">
+        <img data-src="img/game_02.png" class="icon02 lazyload" alt="">
         <a href="game.html"><h2 class="link" id="title02">Game</h2></a>
-        <img src="img/illust_01.png" class="icon03">
+        <img data-src="img/illust_01.png" class="icon03 lazyload" alt="">
         <a href="illust.html"><h2 class="illust-title link" id="title03">Illust</h2></a>
-        <img src="img/anim_03.jpg" class="icon04">
+        <img data-src="img/anim_03.jpg" class="icon04 lazyload" alt="">
         <a href="animation.html"><h2 class="link" id="title04">Animation</h2></a>
-        <img src="img/cg_03.png" class="icon05">
+        <img data-src="img/cg_03.png" class="icon05 lazyload" alt="">
         <a href="cg.html"><h2 class="link" id="title05">CG</h2></a>
     </footer>
+    <script>
+        lazyload();
+    </script>
 </body>
 </html>
