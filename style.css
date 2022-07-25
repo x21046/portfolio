@@ -158,7 +158,7 @@ html {
     font-size: 3rem;
     position: absolute;
     top: 6%;
-    left: 63%;
+    left: 65%;
     z-index: 2; /* 画像と背景の間に重ねる */
 }
 
@@ -219,7 +219,7 @@ html {
 
 .illust-icon{
     top: 63%;
-    left: 54%;
+    left: 56%;
     position: absolute;
     z-index: -1;
 }
@@ -228,15 +228,15 @@ html {
     color: white;
     font-size: 1.7rem;
     position: absolute;
-    top: 89%;
-    left: 58%;
+    top: 87%;
+    left: 59.5%;
     z-index: 2; /* 画像と背景の間に重ねる */
 }
 
 .game-king{
     position: absolute;
     top: 20%;
-    left: 87.7%;
+    left: 88.2%;
     width: 5%;
     height: 5%;
     border-radius: 40%;
@@ -288,7 +288,7 @@ html {
 
 .game-icon{
     top: 25%;
-    left: 84%;
+    left: 85.5%;
     position: absolute;
     z-index: -1;
 }
@@ -297,15 +297,15 @@ html {
     color: white;
     font-size: 1.7rem;
     position: absolute;
-    top: 51%;
-    left: 88%;
+    top: 49%;
+    left: 89%;
     z-index: 2; /* 画像と背景の間に重ねる */
 }
 
 .opencv-king{
     position: absolute;
     top: 20%;
-    left: 72.7%;
+    left: 73.5%;
     width: 5%;
     height: 5%;
     border-radius: 40%;
@@ -357,7 +357,7 @@ html {
 
 .opencv-icon{
     top: 25%;
-    left: 69%;
+    left: 71%;
     position: absolute;
     z-index: -1;
 }
@@ -366,8 +366,8 @@ html {
     color: white;
     font-size: 1.7rem;
     position: absolute;
-    top: 51%;
-    left: 72%;
+    top: 49%;
+    left: 73.7%;
     z-index: 2; /* 画像と背景の間に重ねる */
 }
 
@@ -416,7 +416,7 @@ html {
 
 .anime-icon{
     top: 63%;
-    left: 69%;
+    left: 71%;
     position: absolute;
     z-index: -1;
 }
@@ -425,8 +425,8 @@ html {
     color: white;
     font-size: 1.7rem;
     position: absolute;
-    top: 89%;
-    left: 71.5%;
+    top: 87%;
+    left: 73.3%;
     z-index: 2; /* 画像と背景の間に重ねる */
 }
 
@@ -475,7 +475,7 @@ html {
 
 .cg-icon{
     top: 63%;
-    left: 84%;
+    left: 85.5%;
     position: absolute;
     z-index: -1;
 }
@@ -484,8 +484,8 @@ html {
     color: white;
     font-size: 1.7rem;
     position: absolute;
-    top: 89%;
-    left: 89%;
+    top: 87%;
+    left: 90%;
     z-index: 2; /* 画像と背景の間に重ねる */
 }
 
@@ -534,7 +534,7 @@ html {
 
 .profile-icon{
     top: 25%;
-    left: 54%;
+    left: 56%;
     position: absolute;
     z-index: -1;
 }
@@ -543,8 +543,8 @@ html {
     color: white;
     font-size: 1.7rem;
     position: absolute;
-    top: 51%;
-    left: 58%;
+    top: 49%;
+    left: 59%;
     z-index: 2; /* 画像と背景の間に重ねる */
 }
 

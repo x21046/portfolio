@@ -47,7 +47,7 @@ header{
 .bg-filter{
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
-    height: 820.5px;
+    height: 970.5px;
     width: 100%;
     top: 0;
     left: 0;
@@ -101,7 +101,7 @@ footer{
 }
 
 main {
-    height: 2700pt; /* スクロールの演出を見れるようにmainに高さを指定 */
+    height: 2810pt; /* スクロールの演出を見れるようにmainに高さを指定 */
 }
 
 .icon01{
@@ -258,7 +258,7 @@ main {
 
 .top-img{
     width: 100%;
-    height: 736px;
+    height: 886px;
     z-index: -2;
     margin-top: 85px;
     position: absolute;
@@ -267,7 +267,7 @@ main {
 .top-title{
     color: #fff;
     font-size: 3em;
-    top: 400px;
+    top: 500px;
     left: 20%;
     z-index: 0;
     position: absolute;
@@ -277,7 +277,7 @@ main {
     color: #fff;
     font-size: 2.5em;
     padding: 0 20px;
-    top: 1250px;
+    top: 1400px;
     left: 43%;
     border-bottom: 4px solid #fff;
     z-index: -1;
@@ -289,7 +289,7 @@ main {
 }
 
 .main-background{
-    top: 821px;
+    top: 971px;
     height: 2084.5pt;
     width: 100%;
     z-index: -99;
@@ -299,7 +299,7 @@ main {
 .work-img01{
     height: 300px;
     width: 30%;
-    top: 1450px;
+    top: 1600px;
     left: 20%;
     z-index: 0;
     position: absolute;
@@ -308,7 +308,7 @@ main {
 .work-title01{
     color: #fff;
     font-size: 2em;
-    top: 1450px;
+    top: 1600px;
     left: 60%;
     padding: 0 20px;
     z-index: -1;
@@ -319,7 +319,7 @@ main {
 .work-txt01{
     color: var(--text-color);
     font-size: 1.5em;
-    top: 1520px;
+    top: 1670px;
     left: 55%;
     line-height: 70px;
     z-index: -1;
@@ -333,7 +333,7 @@ main {
 .work-img02{
     height: 600px;
     width: 30%;
-    top: 1975px;
+    top: 2125px;
     right: 20%;
     z-index: 0;
     position: absolute;
@@ -342,7 +342,7 @@ main {
 .work-txt02{
     color: var(--text-color);
     font-size: 1.5em;
-    top: 2045px;
+    top: 2195px;
     right: 58%;
     line-height: 70px;
     z-index: -1;
@@ -352,7 +352,7 @@ main {
 .work-title02{
     color: #fff;
     font-size: 2em;
-    top: 1975px;
+    top: 2125px;
     left: 20%;
     padding: 0 20px;
     z-index: -1;
@@ -367,7 +367,7 @@ main {
 .work-img03{
     height: 300px;
     width: 30%;
-    top: 2800px;
+    top: 2950px;
     left: 20%;
     z-index: 0;
     position: absolute;
@@ -376,7 +376,7 @@ main {
 .work-title03{
     color: #fff;
     font-size: 2em;
-    top: 2800px;
+    top: 2950px;
     left: 60%;
     padding: 0 20px;
     z-index: -1;
@@ -387,7 +387,7 @@ main {
 .work-txt03{
     color: var(--text-color);
     font-size: 1.5em;
-    top: 2870px;
+    top: 3020px;
     left: 55%;
     line-height: 70px;
     z-index: -1;
